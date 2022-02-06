@@ -1,6 +1,6 @@
 {
-    "name": "@nativescript-community/ui-mapbox",
-    "version": "6.2.13",
+    "name": "@benedictstrube/ui-mapbox",
+    "version": "6.3.0",
     "description": "Interactive, thoroughly customizable maps powered by vector tiles and OpenGL.",
     "main": "index",
     "typings": "index.d.ts",
@@ -40,15 +40,19 @@
         {
             "name": "Alex Wells",
             "email": "autaut03@gmail.com"
+        },
+        {
+            "name": "Benedict Strube",
+            "email": "benedict.strube@icloud.com"
         }
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/nativescript-community/ui-mapbox/issues"
+        "url": "https://github.com/benedictstrube/ui-mapbox/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/nativescript-community/ui-mapbox"
+        "url": "https://github.com/benedictstrube/ui-mapbox"
     },
     "readmeFilename": "README.md",
     "dependencies": {

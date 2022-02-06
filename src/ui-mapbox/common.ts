@@ -713,9 +713,12 @@ export interface MapboxApi {
     addImage(imageId: string, image: string, nativeMap?: any): Promise<void>;
 
     removeImage(imageId: string, nativeMap?: any): Promise<void>;
+
     project(data: LatLng): { x: number; y: number };
 
     projectBack(point: { x: number, y: number }): LatLng;
+
+    setScrollingEnabled(enabled: boolean, nativeMap?: any): Promise<any>;
 }
 
 // ------------------------------------------------------------
@@ -892,6 +895,8 @@ export interface MapboxViewApi {
     };
 
     projectBack(screenCoordinate: { x: number, y: number }): LatLng;
+
+    setScrollingEnabled(enabled: boolean): Promise<void>;
 }
 
 // ----------------------------------------------------------------------------------------
@@ -1085,6 +1090,9 @@ export abstract class MapboxViewCommonBase extends ContentView implements Mapbox
     }
     projectBack(screenCoordinate: { x: number, y: number }): LatLng {
         return this.mapbox && this.mapbox.projectBack(screenCoordinate);
+    }
+    setScrollingEnabled(enabled: boolean, nativeMap?: any): Promise<void> {
+        return this.mapbox && this.mapbox.setScrollingEnabled(enabled, this.getNativeMapView());
     }
 }
 

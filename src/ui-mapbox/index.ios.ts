@@ -3174,6 +3174,28 @@ export class Mapbox extends MapboxCommon implements MapboxApi {
             lng: coordinate.longitude
         }
     }
+
+    setScrollingEnabled(enabled: boolean, nativeMap?: any): Promise<void> {
+        return new Promise((resolve, reject) => {
+            try {
+                let theMap: MGLMapView = nativeMap || this._mapboxViewInstance;
+
+                if (!theMap) {
+                    reject("No map has been loaded");
+                    return;
+                }
+
+                theMap.allowsScrolling = enabled;
+
+                resolve();
+            } catch (ex) {
+                if (Trace.isEnabled()) {
+                    CLog(CLogTypes.info, 'Error in mapbox.setScrollingEnabled: ' + ex);
+                }
+                reject(ex);
+            }
+        } );
+    }
 }
 
 const _addObserver = (eventName, callback) => NSNotificationCenter.defaultCenter.addObserverForNameObjectQueueUsingBlock(eventName, null, NSOperationQueue.mainQueue, callback);

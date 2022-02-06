@@ -3404,4 +3404,26 @@ export class Mapbox extends MapboxCommon implements MapboxApi {
             lng: coordinate.getLongitude()
         }
     }
+
+    setScrollingEnabled(enabled: boolean, nativeMap?): Promise<void> {
+        return new Promise((resolve, reject) => {
+            try {
+                const theMap = nativeMap || this._mapboxMapInstance;
+
+                if (!theMap) {
+                    reject('No map has been loaded');
+                    return;
+                }
+
+                theMap.getUiSettings().setScrollGesturesEnabled(enabled);
+
+                resolve();
+            } catch (ex) {
+                if (Trace.isEnabled()) {
+                    CLog(CLogTypes.info, 'Error in mapbox.setScrollingEnabled: ' + ex);
+                }
+                reject(ex);
+            }
+        });
+    }
 }

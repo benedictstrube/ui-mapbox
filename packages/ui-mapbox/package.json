@@ -40,19 +40,15 @@
         {
             "name": "Alex Wells",
             "email": "autaut03@gmail.com"
-        },
-        {
-            "name": "Benedict Strube",
-            "email": "benedict.strube@icloud.com"
         }
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/benedictstrube/ui-mapbox/issues"
+        "url": "https://github.com/nativescript-community/ui-mapbox/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/benedictstrube/ui-mapbox"
+        "url": "https://github.com/nativescript-community/ui-mapbox"
     },
     "readmeFilename": "README.md",
     "dependencies": {

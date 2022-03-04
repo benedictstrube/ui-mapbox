@@ -2353,7 +2353,7 @@ export class Mapbox extends MapboxCommon implements MapboxApi {
      *
      */
     updateSource(id: string, options: UpdateSourceOptions, nativeMap?) {
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
             try {
                 const theMap: MGLMapView = nativeMap || this._mapboxViewInstance;
                 if (!theMap) {
@@ -2372,6 +2372,7 @@ export class Mapbox extends MapboxCommon implements MapboxApi {
                         const nsData: NSData = content.dataUsingEncoding(NSUTF8StringEncoding);
                         const geoJsonShape = MGLShape.shapeWithDataEncodingError(nsData, NSUTF8StringEncoding);
                         (source as MGLShapeSource).shape = geoJsonShape;
+                        resolve();
                         break;
                     default:
                         reject('Invalid source type: ' + options['type']);

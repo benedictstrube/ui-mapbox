@@ -18,10 +18,10 @@
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<h1 align="center">@nativescript-community/ui-mapbox</h1>
+<h1 align="center">@benedictstrube/ui-mapbox</h1>
 <p align="center">
-		<a href="https://npmcharts.com/compare/@nativescript-community/ui-mapbox?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@nativescript-community/ui-mapbox.svg" height="20"/></a>
-<a href="https://www.npmjs.com/package/@nativescript-community/ui-mapbox"><img alt="NPM Version" src="https://img.shields.io/npm/v/@nativescript-community/ui-mapbox.svg" height="20"/></a>
+		<a href="https://npmcharts.com/compare/@benedictstrube/ui-mapbox?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@benedictstrube/ui-mapbox.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@benedictstrube/ui-mapbox"><img alt="NPM Version" src="https://img.shields.io/npm/v/@benedictstrube/ui-mapbox.svg" height="20"/></a>
 	</p>
 
 <p align="center">
@@ -110,7 +110,7 @@ Once you've registered go to your Account > Apps > New token. The 'Default Secre
 ## Installation
 Run the following command from the root of your project:
 
-`ns plugin add @nativescript-community/ui-mapbox`
+`ns plugin add @benedictstrube/ui-mapbox`
 
 
 [](#configuration)
@@ -1059,7 +1059,7 @@ the domain. Google for iOS ATS for detailed options, but for a quick test you ca
 To run the demos, you must clone this repo **recursively**.
 
 ```
-git clone https://github.com/@nativescript-community/ui-mapbox.git --recursive
+git clone https://github.com/@benedictstrube/ui-mapbox.git --recursive
 ```
 
 **Install Dependencies:**

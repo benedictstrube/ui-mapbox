@@ -1,6 +1,6 @@
 {
     "name": "@benedictstrube/ui-mapbox",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "Interactive, thoroughly customizable maps powered by vector tiles and OpenGL.",
     "main": "index",
     "typings": "index.d.ts",
@@ -52,6 +52,6 @@
     },
     "readmeFilename": "README.md",
     "dependencies": {
-        "@nativescript-community/perms": "^2.2.0"
+        "@nativescript-community/perms": "^2.2.25"
     }
 }

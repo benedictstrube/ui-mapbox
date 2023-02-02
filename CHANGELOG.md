@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/benedictstrube/ui-mapbox/compare/v6.2.13...v1.2.5) (2023-02-02)
+
+
+### Bug Fixes
+
+* **`updateSource`:** `updateSource` method was missing in the API ([499e99a](https://github.com/benedictstrube/ui-mapbox/commit/499e99a8c59e06b0387f84321bc89940d224abb0))
+* added project methods to API ([99d0642](https://github.com/benedictstrube/ui-mapbox/commit/99d06422767834046018ba2aace6257a413b720e))
+* removed ios type from native layer instance to remove build error ([efb0f12](https://github.com/benedictstrube/ui-mapbox/commit/efb0f12eed40114581cfa94eae6daf30f0b1d53e))
+* removed ios type from native layer instance to remove build error ([0387b8c](https://github.com/benedictstrube/ui-mapbox/commit/0387b8cb93278ff67aa10afdb781a30f96e50d25))
+* **resolve in `updateSource`:** added missing resolve ([78803e4](https://github.com/benedictstrube/ui-mapbox/commit/78803e460b0689f9495c3f87f29774640ca9f5da))
+* **standard user location annotation view:** restored standard user location annotation view ([621f7ba](https://github.com/benedictstrube/ui-mapbox/commit/621f7bac8daca00752e1db258e5d9c35469bbb39))
+* **tracking user:** tracking the user was not implemented on iOS ([242fe63](https://github.com/benedictstrube/ui-mapbox/commit/242fe635391088af29bd74dab5b11431340305df))
+* **tracking user:** tracking the user was not implemented on iOS ([80d7d9f](https://github.com/benedictstrube/ui-mapbox/commit/80d7d9f5f5219a669db260b70a57d08f5d41d383))
+
+
+### Features
+
+* **access tracking mode:** method to retrieve the current tracking mode ([b7a6cf2](https://github.com/benedictstrube/ui-mapbox/commit/b7a6cf2119969fd5daa304b69497cc9c5f9ca834))
+* **access tracking mode:** method to retrieve the current tracking mode ([9182871](https://github.com/benedictstrube/ui-mapbox/commit/9182871d281ad181a5596a9500f6a8e4dfba2b07))
+* **layer type:** added property `type` to layer class that returns the GeoJSON layer type ([7c87bb2](https://github.com/benedictstrube/ui-mapbox/commit/7c87bb2086eeff65139818120cc1c20c28ad12c3))
+* **layer type:** added property `type` to layer class that returns the GeoJSON layer type ([ea86b3f](https://github.com/benedictstrube/ui-mapbox/commit/ea86b3f88b992783f8c90f395eb5441df296d5c8))
+* **lineMetrics:** added source property `lineMetrics` ([477082d](https://github.com/benedictstrube/ui-mapbox/commit/477082db32077fc04005e6ee1ad5595d5511b0e9))
+* **projectBack:** added projectBack method as inverse method to project ([7bbb6e0](https://github.com/benedictstrube/ui-mapbox/commit/7bbb6e0a1c5895f4825ed60ac55aca41e0a35835))
+* **set scrolling:** added method to enabled/disable scrolling after initialisation ([390b07a](https://github.com/benedictstrube/ui-mapbox/commit/390b07aa5a94022def6e7396da4ffa5e6a6e00b5))
+
+
+
+
+
 ## [6.2.14](https://github.com/nativescript-community/ui-mapbox/compare/v6.2.13...v6.2.14) (2022-02-09)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@benedictstrube/ui-mapbox",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "Interactive, thoroughly customizable maps powered by vector tiles and OpenGL.",
     "main": "index",
     "typings": "index.d.ts",
